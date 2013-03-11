@@ -14,3 +14,6 @@
 
 (defn weak-checksum-b [bytes modulo]
   (rem (sum-product-bytes bytes 0) modulo))
+
+(defn weak-checksum [bytes modulo]
+  (+ (weak-checksum-a bytes modulo) (* modulo (weak-checksum-b bytes modulo))))
