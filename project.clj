@@ -1,6 +1,6 @@
-(defproject rsync "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.4.0"]])
+(defproject rsyncl "0.1.0-SNAPSHOT"
+  :description "Implementation of rsync algorithm in Clojure"
+  :url "http://github.com/jezhumble/rsyncl"
+  :license {:name "BSD 2-Clause License"
+            :url "http://opensource.org/licenses/bsd-license.php"}
+  :dependencies [[org.clojure/clojure "1.4.0"] [digest "1.4.3"]])
