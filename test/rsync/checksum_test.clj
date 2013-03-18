@@ -6,8 +6,8 @@
 
 (deftest weak-checksum-match
   (testing "Weak Checksum"
-    (is (= (+ 24 125 69) (sum-bytes my-byte-array)))
-    (is (= (+ (* 3 24) (* 2 125) 69) (sum-product-bytes my-byte-array 0)))
+    (is (= (+ 24 125 69) (sum-bytes my-byte-array 0 3)))
+    (is (= (+ (* 3 24) (* 2 125) 69) (sum-product-bytes my-byte-array 0 3)))
     (is (= 18 (weak-checksum-a my-byte-array 200)))
     (is (= 191 (weak-checksum-b my-byte-array 200)))
     (is (= 38218 (weak-checksum my-byte-array 200)))
